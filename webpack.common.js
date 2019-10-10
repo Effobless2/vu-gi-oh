@@ -25,7 +25,7 @@ module.exports = {
     ]
   },
   plugins: [
-    new CleanWebpackPlugin(),
+    //new CleanWebpackPlugin(),
     new VueLoaderPlugin(),
     new HtmlWebpackPlugin({template: path.resolve(__dirname, 'public/index.html')}),
     new CopyWebpackPlugin([
