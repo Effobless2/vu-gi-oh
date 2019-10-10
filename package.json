@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "webpack-dev-server --inline",
-    "build": "webpack-cli  --hide-modules",
+    "start": "webpack-dev-server --open --config webpack.dev.js",
+    "build": "webpack-cli  --config webpack.prod.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -28,7 +28,8 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
-    "vue-template-compiler": "^2.6.10"
+    "vue-template-compiler": "^2.6.10",
+    "webpack-merge": "^4.2.2"
   },
   "eslintConfig": {
     "root": true,
