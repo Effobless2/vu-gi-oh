@@ -1,6 +1,6 @@
 <template>
-  <div class="hello">
-    <button :disabled="this.disable" v-on:click="discover" >{{ myValueToShow }}</button>
+  <div class="cardDiv">
+    <img class="card" :disabled="this.disable" v-on:click="discover"  :src="myValueToShow"/>
   </div>
 </template>
 
@@ -19,8 +19,8 @@ export default {
     computed: { //Computed = comme les properties en C#
         myValueToShow: function () {
             if(this.hidden)
-                return "?"
-            return this.value;
+                return "assets/logo.png";
+            return `assets/${this.value}.png`;
         }
     },
     methods: {
@@ -40,3 +40,10 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+    img{
+        height: 100%;
+        max-height: 150px;
+    }
+</style>
