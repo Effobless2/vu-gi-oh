@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "webpack-dev-server --inline",
+    "start": "webpack-dev-server --inline",
     "build": "webpack-cli  --hide-modules",
     "lint": "vue-cli-service lint"
   },
