@@ -4,7 +4,7 @@
   "private": true,
   "main": "main.js",
   "scripts": {
-    "start": "webpack-cli --config webpack.prod.js",
+    "start": "webpack-dev-server --config webpack.prod.js",
     "buildProd": "webpack-cli  --config webpack.prod.js",
     "buildDev": "webpack-cli  --config webpack.dev.js",
     "lint": "vue-cli-service lint",
