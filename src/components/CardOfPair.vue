@@ -19,7 +19,7 @@ export default {
     computed: { //Computed = comme les properties en C#
         myValueToShow: function () {
             if(this.hidden)
-                return "assets/logo.png";
+                return "assets/facedown.png";
             return `assets/${this.value}.png`;
         }
     },
@@ -45,5 +45,8 @@ export default {
     img{
         height: 100%;
         max-height: 150px;
+    }
+    .cardDiv{
+        width: 150px
     }
 </style>
