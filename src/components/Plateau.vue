@@ -45,7 +45,7 @@ export default {
                     second.found(); 
                     this.allFound += 2;
                     if (this.allFound == this.myHeight * this.myWidth){
-                        window.alert("win");
+                        setTimeout(() => window.alert("win"), 50);
                     }
                 }
                 else{
